@@ -2,10 +2,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.mime.application import MIMEApplication
+# import smtplib
+# from email.mime.text import MIMEText
+# from email.mime.multipart import MIMEMultipart
+# from email.mime.application import MIMEApplication
 
 # Definir las variables necesarias
 busqueda = "Universos de películas"
@@ -14,7 +14,7 @@ email_emisor = "pineapple.dev.rg@gmail.com"
 contrasena_emisor = "jysxysmfcwegojjn"
 email_destinatario = "ramonjgonzalezp@gmail.com"
 
-# Abrir Google Chrome y navegar a Wikipedia
+# Abrir Google Chrome, maximizar la ventana y navegar a Wikipedia
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get(url_wikipedia)
